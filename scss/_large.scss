@@ -1,0 +1,38 @@
+header,
+nav,
+main,
+footer {
+        max-width: 1200px;
+        margin: auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li a {
+        padding: .6rem;
+}
+
+nav ul {
+        margin: 0;
+}
+
+
+/*----------- MAIN --------------*/
+main {
+        #sliderContainer img {
+                width: 100%;
+        }
+        .cards {
+                column-count: 4;
+        }
+}
+
+
+/*----------- FOOTER --------------*/

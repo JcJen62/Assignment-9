@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Fill Me In" />
+    <meta name="author" content="John Doe" />
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Assignment 9</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maxium-scale=1"
+    />
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <header>
+      <h1>Boston City</h1>
+      <h2>Where History Comes Alive</h2>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="navBar" class="hide">
+        <li class="active"><a href="#">Visit</a></li>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pay Bills</a></li>
+        <li><a href="#">Meetings</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTENT HERE -->
+    <main>
+      <div class="my_slider">
+        <div id="sliderContainer">
+          <img src="images/Boston1.jpg" alt="City Life" />
+          <div id="textSlider">City Life</div>
+        </div>
+
+        <div id="sliderContainer">
+          <img src="images/Boston2.jpg" alt="City Life" />
+          <div id="textSlider">Bay View</div>
+        </div>
+
+        <div id="sliderContainer">
+          <img src="images/Boston3.jpg" alt="City Life" />
+          <div id="textSlider">Sky View</div>
+        </div>
+
+        <div id="sliderContainer">
+          <img src="images/Boston4.jpg" alt="City Life" />
+          <div id="textSlider">Dusk on the bay</div>
+        </div>
+      </div>
+
+      <h2>Plan Your Visit</h2>
+      <div class="cards">
+          <div>
+              <a href="#">
+                <img src="images/stay.png" alt="Stay">
+                <h3>Places To Stay</h3>
+              </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <img src="images/train.png" alt="Train">
+              <h3>Walk The Red Line</h3>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+              <img src="images/city.png" alt="City">
+              <h3>Pass To The City</h3>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+              <img src="images/eat.png" alt="Eat">
+              <h3>Fine Dining</h3>
+            </a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>&copy; 2021 Jeremy Jensen</footer>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".my_slider").slick({
+          dots: true,
+          arrows: false,
+          infinite: true,
+          speed: 1000,
+          cssEase: "ease-out",
+          autoplay: true,
+          autoplaySpeed: 3000,
+        });
+      });
+    </script>
+  </body>
+</html>
